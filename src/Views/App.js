@@ -1,52 +1,40 @@
 import React from "react";
 import { SideBarContents } from "../Components/SideBar/SideBarContents";
 import SideBar from "../Components/SideBar/SideBar";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 function App() {
+  const listOfItems = [1,2,3,4].map((number) => {
+    return(
+      <div key = {number.toString()}>
+        {number}
+      </div>)
+  })
   return (
     <div className="App">
-      <SideBar myprop = {["hello"]}/>
+      <SideBar myprop={["hello"]} />
       <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
-          </ul>
-        </nav>
+        <div>
+       
 
-        {/* A <Switch> looks through its children <Route>s and
+          {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-            {SideBarContents.forEach(element => {
-              console.log(element)
+          <Switch>
+            <Route path = "/hello">
+              <div>whatisnotworking</div>
+            </Route>
+            {SideBarContents.map((element) => {
+              console.log(element);
+              return(
+                <Route path={element}>
+               <div>{element}</div>
+              </Route>
+              )
+             
             })}
-        <Switch>
-          <Route path="/about">
-            <div>about</div>
-          </Route>
-          <Route path="/users">
-            <div>users</div>
-          </Route>
-          <Route path="/">
-            <div>home</div>
-          </Route>
-        </Switch>
-      </div>
-    </Router>
+          </Switch>
+        </div>
+      </Router>
     </div>
-
   );
 }
 
