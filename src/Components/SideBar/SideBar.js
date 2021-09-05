@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
+import "./SideBarStyles.js"
+import { SideBarContentsContainer } from "./SideBarStyles.js";
+import { SideBarContents } from "./SideBarContents";
 
 export default function SideBar(props) {
-
-    return (
-        <div>
-             <a href = "/about">checkthisout</a>
-        </div>
-    );
+  return (
+    <SideBarContentsContainer>
+      <input />
+      {SideBarContents.map((element) => {
+        const route = "/" + element;
+        return (
+          <div><a key={route + "/"} href={route}>
+            {element}
+          </a></div>
+        );
+      })}
+    </SideBarContentsContainer>
+  );
 }
