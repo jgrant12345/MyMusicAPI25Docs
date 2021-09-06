@@ -1,18 +1,22 @@
-import React, { useState } from "react";
-import "./SideBarStyles.js"
-import { SideBarContentsContainer } from "./SideBarStyles.js";
-import { SideBarContents } from "./SideBarContents";
+import React, { useState } from 'react';
+import './SideBarStyles.js';
+import { SideBarContentsContainer, SideBarInput, ContentLinks, ContentLinksBounds } from './SideBarStyles.js';
+import { SideBarContents } from './SideBarContents';
 
 export default function SideBar(props) {
+  const [SideBar, setSideBar] = useState("");
+
   return (
     <SideBarContentsContainer>
-      <input />
+      <SideBarInput />
       {SideBarContents.map((element) => {
-        const route = "/" + element;
+        const route = '/' + element;
         return (
-          <div><a key={route + "/"} href={route}>
-            {element}
-          </a></div>
+          <ContentLinksBounds key={route + '/'}>
+            <ContentLinks  href={route}>
+              {element}
+            </ContentLinks>
+          </ContentLinksBounds>
         );
       })}
     </SideBarContentsContainer>
