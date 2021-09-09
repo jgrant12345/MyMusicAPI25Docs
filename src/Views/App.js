@@ -1,24 +1,24 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { SideBarContainer, RightSideContent, Basic2 } from "./AppStyles";
+import { SideBarContainer, RightSideContent, VerticalLine } from "./AppStyles";
+import Table from "../Components/Table/Table";
 import { SideBarContents } from "../Components/SideBar/SideBarContents";
 import SideBar from "../Components/SideBar/SideBar";
 function App() {
   return (
-    <body>
-      {/* SideBar */}
+    <div>
       <SideBarContainer>
         <SideBar />
       </SideBarContainer>
-      <RightSideContent> 
-          {SideBarContents.map((element) => {
-            const path = '/' + element;
-            return (
-              <div>{element}</div>
-            );
-          })}
+      <RightSideContent>
+        <VerticalLine />
+        <Table header = "header" body = "body" />
+        {/* {SideBarContents.map((element) => {
+          const path = "/" + element;
+          return <div key={path}>{element}</div>;
+        })} */}
       </RightSideContent>
-    </body>
+    </div>
   );
 }
 

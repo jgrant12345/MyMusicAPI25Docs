@@ -1,21 +1,35 @@
 import React, { useState } from 'react';
 import './SideBarStyles.js';
-import { SideBarContentsContainer, SideBarInput, ContentLinks, ContentLinksBounds } from './SideBarStyles.js';
+import {
+  SideBarContentsContainer,
+  SideBarInput,
+  ContentLinks,
+  ContentLinksBounds,
+  SideBarInputContainer,
+} from './SideBarStyles.js';
 import { SideBarContents } from './SideBarContents';
 
 export default function SideBar(props) {
-  const [SideBar, setSideBar] = useState("");
-
+  const [sideBarInput, setSideBarInput] = useState(' ');
+  let filteredContent = SideBarContents.filter((element) => {
+    if (sideBarInput === ' ') return SideBarContents;
+    else {
+      return element.toLowerCase().startsWith(sideBarInput.toLowerCase());
+    }
+  });
   return (
     <SideBarContentsContainer>
-      <SideBarInput />
-      {SideBarContents.map((element) => {
+      <SideBarInputContainer>
+        <SideBarInput
+          onChange={(event) => setSideBarInput(event.target.value)}
+          placeholder="Search"
+        />
+      </SideBarInputContainer>
+      {filteredContent.map((element) => {
         const route = '/' + element;
         return (
           <ContentLinksBounds key={route + '/'}>
-            <ContentLinks  href={route}>
-              {element}
-            </ContentLinks>
+            <ContentLinks href={route}>{element}</ContentLinks>
           </ContentLinksBounds>
         );
       })}

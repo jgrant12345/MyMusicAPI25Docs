@@ -10,18 +10,22 @@ export const SideBarContainer = styled.div`
   left: 0;
   overflow-x: hidden;
   padding-top: 20px;
+  padding-left: 15px;
 `;
 
-export const Basic = styled.div`
-background-color:white;
 
-
-`;
 
 
 export const RightSideContent = styled.div`
-background-color:white;
-margin-left: 160px;
+margin-left: 180px;
 margin-top: 50px;
 padding: 0px; 10px;
 `;
+
+export const VerticalLine = styled.div `
+border-left: 1.5px solid #D3D3D3;
+height: 100%;
+position: absolute;
+margin-left: -3px;
+top: 0;
+`
