@@ -7,7 +7,8 @@ export const TableHeader = styled.th`
     width: 200px;
     font-size: 20px;
     font-weight: normal;
-
+    color: #303030;
+    padding: 5px 5px 5px 5px;
 `;
 
 export const TableData = styled.td`
@@ -19,4 +20,6 @@ export const TableStyle = styled.table`
 `;
 export const Code = styled.div`
     white-space:pre-wrap;
+    color: #696969;
+    padding-left: 5px;
 `;

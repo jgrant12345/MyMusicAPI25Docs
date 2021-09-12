@@ -4,6 +4,7 @@ export const SideBarContentsContainer = styled.div`
   flex-direction: column;
   height: 100%;
   align-items: left;
+  
 `;
 
 export const SideBarInput = styled.input`
@@ -29,7 +30,7 @@ export const ContentLinks = styled.a`
   position: relative;
   text-decoration: none;
   color: #606060;
-  font-size: 16px;
+  font-size: 18px;
   &:hover {
     color: black;
   }
