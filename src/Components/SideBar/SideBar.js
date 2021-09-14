@@ -20,16 +20,16 @@ export default function SideBar(props) {
   return (
     <SideBarContentsContainer>
       <SideBarInputContainer>
-        <SideBarInput
-          onChange={(event) => setSideBarInput(event.target.value)}
-          placeholder="Search"
-        />
+      <SideBarInput
+        onChange={(event) => setSideBarInput(event.target.value)}
+        placeholder="Search"
+      />
       </SideBarInputContainer>
       {filteredContent.map((element) => {
-        const route = '/' + element;
+        const link = '#' + element;
         return (
-          <ContentLinksBounds key={route + '/'}>
-            <ContentLinks href={route}>{element}</ContentLinks>
+          <ContentLinksBounds key={link}>
+            <ContentLinks href={link}>{element}</ContentLinks>
           </ContentLinksBounds>
         );
       })}

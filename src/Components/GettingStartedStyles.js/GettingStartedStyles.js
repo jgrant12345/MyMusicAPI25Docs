@@ -12,4 +12,5 @@ width: 50%;
 word-wrap:break-word;
 color: #606060;
 font-size: 18px;
+margin-bottom: 70px;
 `;
