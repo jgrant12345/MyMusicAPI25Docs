@@ -4,12 +4,11 @@ export default function Table(props) {
   const { header, body } = props;
   return (
     <div>
-      {header} {body}
       <TableStyle>
-        <TableHeader>Response</TableHeader>
+        <TableHeader>{header}</TableHeader>
         <tr>
           <TableData>
-            <Code>height {'\n'} jkljskd</Code>
+            <Code> {body} </Code>
           </TableData>
         </tr>
       </TableStyle>

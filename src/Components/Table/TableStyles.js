@@ -13,6 +13,7 @@ export const TableHeader = styled.th`
 
 export const TableData = styled.td`
     background-color: #F5F5F5;
+    border-radius: 0px 0px 5px 5px
 `;
 
 export const TableStyle = styled.table`
