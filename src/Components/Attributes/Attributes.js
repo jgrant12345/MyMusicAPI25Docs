@@ -2,7 +2,10 @@ export function Attributes(){
     return (
         <div>
         <div>Attributes</div>
-       <hr />
+        <ol>
+            <div>hi</div>
+            <div>hello</div>
+        </ol>
        </div>
     )
 }

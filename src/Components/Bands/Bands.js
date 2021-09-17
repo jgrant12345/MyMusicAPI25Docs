@@ -10,6 +10,9 @@ export function Bands(){
         End Points
         <hr />
        <Routes />
+       <br />
+       <Attributes RouteName = "https://mymusicapi25/herokuapp.com/v1/bands/{BandName}"/>
+
         <Table header="Response" body="body" />
         </div>
     )
