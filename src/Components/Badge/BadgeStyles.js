@@ -12,7 +12,7 @@ export const Background = styled.div`
   justify-content: center;
   align-items: center;
   font-family:Verdana;
-  margin-top: 15px;
+  margin-top: 3px;
   
   
 `;

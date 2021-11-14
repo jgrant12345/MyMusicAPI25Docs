@@ -20,10 +20,10 @@ export default function SideBar(props) {
   return (
     <SideBarContentsContainer>
       <SideBarInputContainer>
-      <SideBarInput
-        onChange={(event) => setSideBarInput(event.target.value)}
-        placeholder="Search"
-      />
+        <SideBarInput
+          onChange={(event) => setSideBarInput(event.target.value)}
+          placeholder="Search"
+        />
       </SideBarInputContainer>
       {filteredContent.map((element) => {
         const link = '#' + element;
