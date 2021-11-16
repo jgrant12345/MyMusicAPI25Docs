@@ -5,7 +5,7 @@ export function Routes(props){
     return(
         <FlexBox>
             <span> <Badge /> </span>
-        <MyRoute>https://mymusicapi25. herokuapp.com/v1/bands/&#123;BandName&#125; </MyRoute>
+        <MyRoute>{props.RouteName}</MyRoute>
         </FlexBox>
     )
 }

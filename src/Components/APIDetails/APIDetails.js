@@ -3,23 +3,24 @@ import {
   Description,
 } from '../GettingStartedStyles.js/GettingStartedStyles';
 import Badge from '../Badge/Badge';
-import { Attributes } from '../Attributes/Attributes';
+import { Parameters } from '../Parameters/Parameters';
 import { Routes } from '../Routes/Routes';
 import Table from '../Table/Table';
 import { TableContainer } from '../Table/TableStyles';
-import { GridContainer , RouteAndAttributes, TableGridContainer } from './BandStyles';
-export function Bands() {
+import { GridContainer , RouteAndAttributes, TableGridContainer,  Container } from './APIDetailsStyles';
+export function APIDetails(props) {
+  console.log(props.ParameterList)
   return (
-    <div id="Bands">
-      <Header>Bands</Header>
+    <Container>
+      <Header>{props.Header}</Header>
       End Points
       <hr />
       {/* make my grid here */}
       <GridContainer>
         <RouteAndAttributes>
-      <Routes />
+      <Routes RouteName = {props.RouteName}/>
       <br />
-      <Attributes RouteName="https://mymusicapi25/herokuapp.com/v1/bands/{BandName}" />
+      <Parameters ParameterList = {props.ParameterList}/>
       </RouteAndAttributes>
       <TableGridContainer>
       <TableContainer>
@@ -28,6 +29,6 @@ export function Bands() {
       </TableGridContainer>
       </GridContainer>
 
-    </div>
+    </Container>
   );
 }

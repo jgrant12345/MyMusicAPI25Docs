@@ -10,7 +10,7 @@ export const Header = styled.div`
 
 export const GridContainer = styled.div`
   display: grid;
-  background-color:yellow;
+  grid-template-columns: 60% 10% 10%x;
   `
   
   ;
@@ -22,9 +22,15 @@ export const GridContainer = styled.div`
   `
   ;
   export const TableGridContainer = styled.div`
-  grid-column: 2/3;
+  grid-column: 3/4;
   grid-row: 1/2;
 `
+  ;
+
+  export const Container = styled.div`
+  margin-bottom: 100px;
+  `
+  
   ;
 
 

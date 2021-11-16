@@ -20,9 +20,8 @@ padding: 0px; 10px 0px 200px;
 
 export const VerticalLine = styled.div`
   border-left: 1.5px solid #d3d3d3;
-
   height: 100%;
-  position: absolute;
+  position: fixed;
   margin-left: 180px;
   top: 0;
   z-index:10;
