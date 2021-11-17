@@ -1,3 +1,4 @@
+import { Description, ParameterName } from "./ParameterStyles";
 export function Parameters(props) {
   return (
     <div>
@@ -6,8 +7,8 @@ export function Parameters(props) {
         {props.ParameterList.map((object) => {
           console.log(object);
           return <li key={object.Description}>
-              <div>{object.Name}</div>
-              <div>{object.Description}</div>
+              <ParameterName>{object.Name}</ParameterName>
+              <Description>{object.Description}</Description>
               </li>;
         })}
       </ol>

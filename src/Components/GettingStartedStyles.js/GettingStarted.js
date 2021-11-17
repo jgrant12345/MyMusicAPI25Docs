@@ -1,7 +1,7 @@
 import { Header, Description } from './GettingStartedStyles';
 export function GettingStarted() {
   return (
-    <div>
+    <div id = "Bands">
       <Header>Getting Started</Header>
       <Description>
         {' '}

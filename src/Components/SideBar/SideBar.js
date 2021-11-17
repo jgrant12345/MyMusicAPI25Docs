@@ -26,7 +26,7 @@ export default function SideBar(props) {
         />
       </SideBarInputContainer>
       {filteredContent.map((element) => {
-        const link = '#' + element;
+        let link = '#' + element;
         return (
           <ContentLinksBounds key={link}>
             <ContentLinks href={link}>{element}</ContentLinks>
