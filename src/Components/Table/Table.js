@@ -10,9 +10,9 @@ export default function Table(props) {
         </tr>
         </thead>
        <tbody>
-          <tr>
+          <TableData>
             <Code> {body} </Code>
-          </tr>
+          </TableData>
           </tbody>
       </TableStyle>
   );

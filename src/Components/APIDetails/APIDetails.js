@@ -7,7 +7,7 @@ import { Parameters } from '../Parameters/Parameters';
 import { Routes } from '../Routes/Routes';
 import Table from '../Table/Table';
 import { TableContainer } from '../Table/TableStyles';
-import { GridContainer , RouteAndAttributes, TableGridContainer,  Container } from './APIDetailsStyles';
+import { GridContainer , RouteAndAttributes, TableGridContainer,  Container, SampleTable } from './APIDetailsStyles';
 export function APIDetails(props) {
   console.log(props.scrollid)
   console.log(props.ParameterList)
@@ -25,9 +25,14 @@ export function APIDetails(props) {
       </RouteAndAttributes>
       <TableGridContainer>
       <TableContainer>
-        <Table header="Response" body="body" />
+        <Table header="Sample Endpoint" body= {props.sampleEndPointResponse} />
       </TableContainer>
       </TableGridContainer>
+
+      <SampleTable>
+      <Table header="Sample Response" body={props.sampleOutPutResponse} />
+      </SampleTable>
+      
       </GridContainer>
 
     </Container>

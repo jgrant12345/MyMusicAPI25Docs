@@ -10,7 +10,8 @@ export const Header = styled.div`
 
 export const GridContainer = styled.div`
   display: grid;
-  grid-template-columns: 60% 10% 10%x;
+  grid-template-columns: 55% 1% 12%;
+  grid-template-rows: 150px 200px;
   `
   
   ;
@@ -30,7 +31,12 @@ export const GridContainer = styled.div`
   export const Container = styled.div`
   margin-bottom: 100px;
   `
-  
+  ;
+
+  export const SampleTable = styled.div`
+  grid-column: 3/4;
+  grid-row: 2-3;
+  `
   ;
 
 
