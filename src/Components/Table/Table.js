@@ -3,15 +3,17 @@ import { TableHeader, TableData, TableStyle, Code } from './TableStyles';
 export default function Table(props) {
   const { header, body } = props;
   return (
-    <div>
       <TableStyle>
+        <thead>
+          <tr>
         <TableHeader>{header}</TableHeader>
-        <tr>
-          <TableData>
-            <Code> {body} </Code>
-          </TableData>
         </tr>
+        </thead>
+       <tbody>
+          <tr>
+            <Code> {body} </Code>
+          </tr>
+          </tbody>
       </TableStyle>
-    </div>
   );
 }

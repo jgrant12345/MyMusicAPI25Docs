@@ -20,62 +20,11 @@ function App() {
         <APIDetails
           RouteName="https://mymusicapi25.herokuapp.com/v1/bands/&#123;BandName&#125;"
           Header="Bands"
-          ParameterList = {BandParams}
-          
+          ParameterList = {BandParams}  
+          scrollId = "Bands"      
         />
-
-<div id="band1">
-  <h2>Section 1</h2>
-  <p>Click on the link to see the "smooth" scrolling effect.</p>
-  <a href="#band2">Click Me to Smooth Scroll to Section 2 Below</a>
-  <p>Note: Remove the scroll-behavior property to remove smooth scrolling.</p>
-</div>
-
-<div id="band2">
-  <h2>Section 2</h2>
-  <a href="#Bands">Click Me to Smooth Scroll to Section 1 Above</a>
-</div>
-        
-        <div>a</div>
-        <div>a</div>
-        <div>a</div>
-        <div>a</div>
-        <div>a</div>
-        <div>a</div>
-        <div>a</div>
-        <div>a</div>
-        <div>a</div>
-        <div>a</div>
-        <div>a</div>
-        <div>a</div>
-        <div>a</div>
-        <div>a</div> <div>a</div>
-        <div>a</div>
-        <div>a</div>
-        <div>a</div>
-        <div>a</div>
-        <div>a</div>
-        <div>a</div>
-        <div>a</div>
-        <div>a</div>
-        <div>a</div>
-        <div>a</div>
-        <div>a</div>
-        <div>a</div>
-        <div>a</div>
-        <div>a</div>
-        <div>a</div>
-        <div>a</div>
-        <div>a</div>
-        <div>a</div>
-        <div>a</div>
-        <div>a</div>
-        <div>a</div>
-        <div>a</div>
-        <div>a</div>
-        <div>a</div>
-
       </RightSideContent>
+
     </AppContainer>
   );
 }

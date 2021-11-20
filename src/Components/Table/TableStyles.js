@@ -19,7 +19,7 @@ export const TableData = styled.td`
 export const TableStyle = styled.table`
   border-collapse: collapse;
 `;
-export const Code = styled.div`
+export const Code = styled.td`
   white-space: pre-wrap;
   color: #696969;
   padding-left: 5px;
