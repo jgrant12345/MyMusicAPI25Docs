@@ -18,7 +18,7 @@ export const TableData = styled.tr`
 
 export const TableStyle = styled.table`
   border-collapse: collapse;
-  width: 300%;
+  width: 200%;
   height: 100px;
   word-break: break-all;
 `;

@@ -4,6 +4,7 @@ import {
 } from '../GettingStartedStyles.js/GettingStartedStyles';
 import Badge from '../Badge/Badge';
 import { Parameters } from '../Parameters/Parameters';
+import '../../Views/App.css';
 import { Routes } from '../Routes/Routes';
 import Table from '../Table/Table';
 import { TableContainer } from '../Table/TableStyles';
@@ -17,14 +18,14 @@ export function APIDetails(props) {
       End Points
       <hr />
       {/* make my grid here */}
-      <GridContainer>
+      <GridContainer className = "test">
         <RouteAndAttributes>
       <Routes RouteName = {props.RouteName}/>
       <br />
       <Parameters ParameterList = {props.ParameterList}/>
       </RouteAndAttributes>
       <TableGridContainer>
-      <TableContainer>
+      <TableContainer >
         <Table header="Sample Endpoint" body= {props.sampleEndPointResponse} />
       </TableContainer>
       </TableGridContainer>
