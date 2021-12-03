@@ -1,1 +1,1 @@
-export const SideBarContents = ["Getting Started","Bands","Songs"]
+export const SideBarContents = ["GettingStarted","Bands","Songs"]

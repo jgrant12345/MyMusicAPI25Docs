@@ -14,7 +14,7 @@ function App() {
       </SideBarContainer>
       <VerticalLine />
       <RightSideContent>
-        <GettingStarted scrollId = "Getting Started"/>
+        <GettingStarted scrollId = "GettingStarted"/>
         <APIDetails
           RouteName="https://mymusicapi25.herokuapp.com/v1/bands/&#123;BandName&#125;"
           Header="Bands"
