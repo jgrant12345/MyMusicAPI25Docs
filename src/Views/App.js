@@ -9,6 +9,7 @@ const BandParams = [{Name: "BandName", Description: "This is the name of the Ban
 function App() {
   return (
     <AppContainer >
+      sdsdsds
       <SideBarContainer>
         <SideBar />
       </SideBarContainer>
