@@ -43,7 +43,6 @@ export const GridContainer = styled.div`
   ;
 
   export const Container = styled.div`
-  margin-bottom: 100px;
   `
   ;
 
